@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: salmaeltohfaa_urdf
+    relative_path: urdf/salmaeltohfaa_urdf.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/salmaeltohfaa_urdf.srdf
+  CONFIG:
+    author_name: Torky&Salma
+    author_email: hossamtorky54@gmail.com
+    generated_timestamp: 1724173870

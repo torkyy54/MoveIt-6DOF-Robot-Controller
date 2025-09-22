@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="salmaeltohfaa_urdf">
+    <link name="world" />
+    <joint name="base_joint" type="fixed">
+        <parent link="world" />
+        <child link="base_link" />
+        <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+    </joint>
+    <link name="base_link">
+        <inertial>
+            <origin xyz="0.181717249726881 -0.304525535102228 0.154498448315151" rpy="0 0 0" />
+            <mass value="5.77038711203743" />
+            <inertia ixx="0.0364565824839989" ixy="0.00079966987822196" ixz="-4.11694766319079E-05" iyy="0.0364565824839989" iyz="-4.11694766319048E-05" izz="0.066562297056268" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/base_link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/base_link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="link_1">
+        <inertial>
+            <origin xyz="-0.0570210765670099 0.0826556484094014 0.00275679324552797" rpy="0 0 0" />
+            <mass value="2.29953700988392" />
+            <inertia ixx="0.0118632867692086" ixy="0.00905457646571293" ixz="0.000471552778726988" iyy="0.0161965646892642" iyz="-0.000412487248442897" izz="0.0236797306878583" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_1.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_1.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_1" type="revolute">
+        <origin xyz="0.18029 -0.30595 0.19978" rpy="1.5708 0 -1.5253" />
+        <parent link="base_link" />
+        <child link="link_1" />
+        <axis xyz="0 1 0" />
+        <limit lower="-3.14" upper="3.14" effort="200" velocity="3" />
+    </joint>
+    <link name="link_2">
+        <inertial>
+            <origin xyz="-0.1400984171951 0.0353140659577311 0.00811416415288252" rpy="0 0 0" />
+            <mass value="0.915335494713074" />
+            <inertia ixx="0.000610886486317632" ixy="-7.90079055200961E-05" ixz="0.000173604105858238" iyy="0.0178684004633868" iyz="3.11127126614949E-05" izz="0.0175342842130703" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_2.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_2.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_2" type="revolute">
+        <origin xyz="-0.15 0.16 0" rpy="-1.57079632679489 0 -1.5402267867343" />
+        <parent link="link_1" />
+        <child link="link_2" />
+        <axis xyz="0 -1 0" />
+        <limit lower="-0.5" upper="1.57" effort="200" velocity="3" />
+    </joint>
+    <link name="link_3">
+        <inertial>
+            <origin xyz="0.0344829178697452 0.0385370331438093 -0.0261599540243111" rpy="0 0 0" />
+            <mass value="1.29268413475606" />
+            <inertia ixx="0.00176598354829178" ixy="-0.000298642140105953" ixz="8.19579425540918E-05" iyy="0.00627208700527411" iyz="0.000123623283563416" izz="0.00666157176406101" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_3.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_3.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_3" type="revolute">
+        <origin xyz="-0.35 0 0" rpy="-1.5707963267949 -1.44562929809169 0" />
+        <parent link="link_2" />
+        <child link="link_3" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.14" upper="0.333" effort="200" velocity="3" />
+    </joint>
+    <link name="link_4">
+        <inertial>
+            <origin xyz="-0.0990561589116649 -4.47153369886877E-10 -6.02970007257397E-10" rpy="0 0 0" />
+            <mass value="0.541965437925527" />
+            <inertia ixx="0.000449738058054736" ixy="-1.29614050552903E-11" ixz="-1.8650902857179E-11" iyy="0.00187686448391936" iyz="-2.69799714321573E-12" izz="0.00177757197203593" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_4.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_4.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_4" type="revolute">
+        <origin xyz="0.200030109736772 0.0450000000000005 -0.0279999999999998" rpy="1.38114728084667 0 -3.14159265358979" />
+        <parent link="link_3" />
+        <child link="link_4" />
+        <axis xyz="-1 0 0" />
+        <limit lower="-3.14" upper="3.14" effort="200" velocity="3" />
+    </joint>
+    <link name="link_5">
+        <inertial>
+            <origin xyz="-0.00264987181422349 5.55111512312578E-17 0.0600716882697187" rpy="0 0 0" />
+            <mass value="0.314427966626738" />
+            <inertia ixx="0.00031793627193099" ixy="-2.75285707857648E-21" ixz="-2.83081161835294E-06" iyy="0.000314385949816672" iyz="-9.99498877760074E-20" izz="0.000221099985797756" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_5.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_5.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_5" type="revolute">
+        <origin xyz="-0.158969890263229 0 0" rpy="2.33268419346699 1.57079630572147 -0.821732842280758" />
+        <parent link="link_4" />
+        <child link="link_5" />
+        <axis xyz="-1 0 0" />
+        <limit lower="-1.57" upper="1.57" effort="200" velocity="3" />
+    </joint>
+    <link name="link_6">
+        <inertial>
+            <origin xyz="0.0211084076096092 1.11022302462516E-16 2.77555756156289E-17" rpy="0 0 0" />
+            <mass value="0.0764236243055985" />
+            <inertia ixx="4.01686778529101E-05" ixy="4.2351647362715E-22" ixz="-9.74087889342445E-21" iyy="3.80666938577063E-05" iyz="1.04687978324711E-20" izz="3.2004469385889E-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_6.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.686274509803922 0.607843137254902 0.529411764705882 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_6.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_6" type="revolute">
+        <origin xyz="-0.00249999999999129 0 0.0891760593649885" rpy="1.56897483518459 -1.57079630572147 2.96238987763584" />
+        <parent link="link_5" />
+        <child link="link_6" />
+        <axis xyz="1 0 0" />
+        <limit lower="-3.14" upper="3.14" effort="200" velocity="3" />
+    </joint>
+    <link name="link_7">
+        <inertial>
+            <origin xyz="7.7715611723761E-16 -0.0521144286452115 -0.0211136446322687" rpy="0 0 0" />
+            <mass value="0.0404440470310485" />
+            <inertia ixx="5.23628514892279E-05" ixy="-1.48442524006316E-19" ixz="-4.10281583826302E-20" iyy="7.37665514001875E-06" iyz="-1.27372359429651E-05" izz="4.71313333845613E-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_7.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.690196078431373 0.611764705882353 0.529411764705882 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_7.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_7" type="revolute">
+        <origin xyz="0.0377159981464105 0 0.0408095110958766" rpy="-0.420815468554365 0 1.5707963267949" />
+        <parent link="link_6" />
+        <child link="link_7" />
+        <axis xyz="1 0 0" />
+        <limit lower="-1.57" upper="0.3333" effort="200" velocity="3" />
+    </joint>
+    <link name="link_8">
+        <inertial>
+            <origin xyz="-1.11022302462516E-15 -0.052114428645216 -0.0211136446322617" rpy="0 0 0" />
+            <mass value="0.0404440470310485" />
+            <inertia ixx="5.23628514892281E-05" ixy="1.75163766514229E-20" ixz="1.05879118406788E-21" iyy="7.37665514001878E-06" iyz="-1.27372359429652E-05" izz="4.71313333845614E-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_8.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.690196078431373 0.611764705882353 0.529411764705882 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://salmaeltohfaa_urdf/meshes/link_8.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_8" type="revolute">
+        <origin xyz="0.0377159981464092 0 -0.0408095110958682" rpy="2.72077718503543 0 -1.57079632679489" />
+        <parent link="link_6" />
+        <child link="link_8" />
+        <axis xyz="-1 0 0" />
+        <limit lower="-0.3333" upper="1.57" effort="200" velocity="3" />
+    </joint>
+    <transmission name="link_1_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint_1">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link_1_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="link_2_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint_2">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link_2_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="link_3_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint_3">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link_3_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="link_4_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint_4">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link_4_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="link_5_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint_5">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link_5_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="link_6_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint_6">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link_6_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="link_7_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint_7">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link_7_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="link_8_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint_8">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="link_8_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo>
+        <plugin name="control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+    <gazebo reference="link_1">
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link_2">
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link_3">
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link_4">
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link_5">
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link_6">
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link_7">
+        <selfCollide>true</selfCollide>
+    </gazebo>
+    <gazebo reference="link_8">
+        <selfCollide>true</selfCollide>
+    </gazebo>
+</robot>
+

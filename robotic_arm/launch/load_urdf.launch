@@ -1,0 +1,4 @@
+<launch>
+  <param name="robot_description" command="$(find xacro)/xacro $(find your_package)/urdf/test_robot.urdf" />
+</launch>
+
