@@ -14,4 +14,7 @@ It focuses on planning and executing motion trajectories to control the **end-ef
 ---
 
 ## 🎥 Demo Video
-[Watch Demo Video]([https://drive.google.com/drive/folders/1lMh-WcJdCRjrx2yTkbgSe_KvFn-WjNP5?usp=drive_link](https://drive.google.com/drive/folders/1BHCzIRwit8WFAuKeuEvJ3L_2OWrgiaYG))
+[Watch Demo Video](https://drive.google.com/drive/folders/1BHCzIRwit8WFAuKeuEvJ3L_2OWrgiaYG)
+
+
+
